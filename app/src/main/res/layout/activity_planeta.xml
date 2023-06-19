@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Planeta">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        />
+
+
+    <TextView
+        android:id="@+id/TVP1"
+        android:layout_width="143dp"
+        android:layout_height="51dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="134dp"
+        android:layout_weight="2"
+        android:text="TextView"
+        android:textColor="@color/Rojo1"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/IVP1"
+        android:layout_width="224dp"
+        android:layout_height="103dp"
+        android:layout_below="@+id/TVP1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="93dp"
+        android:layout_weight="1"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/TVPI"
+        android:layout_width="409dp"
+        android:layout_height="235dp"
+        android:layout_below="@+id/Spinner"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_weight="2"
+        android:text="TextView"
+        android:textColor="@color/RojoBajo"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="137dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/TVPI"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginBottom="13dp"
+        android:text="Volver"
+        android:textSize="22sp" />
+
+    <Spinner
+        android:id="@+id/Spinner"
+        android:layout_width="234dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/IVP1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="91dp"
+        android:entries="@array/Opciones"
+        android:textSize="34dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</RelativeLayout>

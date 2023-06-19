@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">EP1_DAMII_LucianoBacab</string>
+    <string name="TextView">Seleccione una Planeta</string>
+    <string-array name="Opciones">
+        <item>Seleccione dato</item>
+        <item>Clima</item>
+        <item>Geografia</item>
+        <item>Flora</item>
+        <item>Fauna</item>
+    </string-array>
+
+</resources>
